@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Layout-Grid</title>
+    <style>
+        div {
+            box-shadow: 0 0 3px #333;
+            border-radius: 5px;
+            padding: 1rem;
+        }
+
+        main {
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            gap: 1rem;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 0;
+        }
+
+        #box1 {
+            display: grid;
+            place-items: center;
+        }
+
+        #box3 {
+            display: grid;
+            place-items: center;
+            background-color: rgb(170, 255, 0);
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div id="box1">
+            <div>
+                <article>
+                <h1>Django</h1>
+                <button>know more</button>
+                </article>
+            </div>
+        </div>
+        <div>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime assumenda incidunt eius accusamus cum
+                enim, beatae, quibusdam rerum ullam ab consequuntur minus omnis maiores, illum vitae quasi laudantium
+                voluptatum qui!</p>
+        </div>
+        <div id="box3">
+            <h1>html</h1>
+            <button>know more</button>
+            
+        </div>
+        <div>
+            <p>Pariatur totam numquam asperiores voluptate repudiandae laborum explicabo corporis delectus provident?
+                Cupiditate architecto mollitia ipsa asperiores neque labore laborum, omnis perspiciatis temporibus,
+                placeat atque explicabo eaque sapiente, maxime eligendi! Aspernatur.</p>
+        </div>
+        <div>
+            <p>Alias neque non dicta quas expedita mollitia, facilis voluptatum ut exercitationem et placeat architecto.
+                Magni quibusdam impedit id doloribus. Ipsum ratione perspiciatis unde repellendus sequi atque aspernatur
+                fuga voluptatem eaque?</p>
+        </div>
+        <div>
+            <p>Nesciunt dignissimos esse, sit expedita nihil ad blanditiis dolore! Et, eveniet possimus. Error eveniet
+                magni temporibus voluptas libero maiores natus voluptatibus eius recusandae sunt animi nisi quia,
+                distinctio laboriosam laborum.</p>
+        </div>
+    </main>
+</body>
+
+</html>
