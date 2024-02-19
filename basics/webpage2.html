@@ -21,10 +21,11 @@
 
         .container {
             display: flex;
-           
+             justify-content: center;
         }
 
         h1 {
+            color: white;
             font-size: 5rem;
             font-family: sans-serif;
             text-align: center;
@@ -48,13 +49,14 @@
         .leftcol div:nth-child(1){
             display: flex;
             gap: 1rem;
+            align-items: center;
         }
         .leftcol{
             font-size: 2rem;
             text-decoration: none;
             color: white;
             font-family: sans-serif;
-            font-weight: bold;
+            font-weight: bolder;
          }
          .leftcol img{
             border-radius: 50%;
@@ -72,12 +74,12 @@
                flex-direction: column;
                background-color: reg(174,174,174);
                gap: 2rem;
-               padding: 3rem;
-               width: 50%;
+               padding: 10rem 3rem;
+               width: 40%;
 
          }
          .intro h2{
-            font-size: 2rem;
+            font-size: 4rem;
             color:rgb(65,65,250);
          }
          .intro p{
@@ -116,13 +118,13 @@
                 <div class="leftcol">
                     <div>
                         <img src="logo.jpg" alt="microsoft windows" height="64" width="64">
-                        <a>Zimcore<br> Hubs</a>
+                        <a href="#">Zimcore<br> Hubs</a>
                     </div>
                     <h1>
                         <span> Changing the world</span><br> one app at a time
                     </h1>
                     <div>
-                        <a class="cta">Learn more</a>
+                        <a class="cta" href="#">Learn more</a>
                     </div>
                 </div>
                 <div class="rightcol">
@@ -148,6 +150,7 @@
         </section>
         <section>
             <div class="container">
+                
                 <h2>Our services</h2>
                 <div class="services">
                     <div class="card">
