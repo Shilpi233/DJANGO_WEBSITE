@@ -23,16 +23,29 @@
             display: flex;
              justify-content: center;
         }
-
+       
+            
+        
         h1 {
             color: white;
             font-size: 5rem;
             font-family: sans-serif;
             text-align: center;
         }
+        .box{
+            text-align: center;
+            background-color: skyblue;
+            font-size: 4rem;
+        }
 
         h1>span {
             font-weight: lighter;
+        }
+        h2 {
+            color: blue;
+            font-size: 4rem;
+            font-family: sans-serif; 
+            
         }
         #s1{
             background-image: url('bac.png');
@@ -42,7 +55,7 @@
         .leftcol{
             display: flex;
             flex-direction: column;
-            justify-content: flex-start;
+            justify-content: center;
             align-items: center;
             gap: 4rem;
         }
@@ -51,7 +64,7 @@
             gap: 1rem;
             align-items: center;
         }
-        .leftcol{
+        .leftcol a {
             font-size: 2rem;
             text-decoration: none;
             color: white;
@@ -72,7 +85,7 @@
          .intro{
                display: flex;
                flex-direction: column;
-               background-color: reg(174,174,174);
+               background-color: lightgray;
                gap: 2rem;
                padding: 10rem 3rem;
                width: 40%;
@@ -84,8 +97,9 @@
          }
          .intro p{
                  font-size: 2rem;
-                 color: rgb(60, 59, 59);
+                 color: rgb(60, 49, 49);
          }
+         
          .owners{
             display: flex;
             gap: 2rem;
@@ -103,11 +117,40 @@
          .c2{
             gap: 3rem;
          }
-        * h3,h4 {
-            padding: 1rem 3rem;
-            text-align:center;
-            font-family: sans-serif;
+         .container h2{
+            font-size: 3rem;
+            color: blue;
+            text-align: column;
+            display: flex;
+        
          }
+         .card{
+            display: inline-flex;
+            flex-flow: inline row;
+            justify-content: center;
+            margin: 5rem;
+            background-color: reg(95,95,251);
+            grid-row: auto auto auto;
+         }
+        .container h3{
+        font-size: 3rem;
+        color: rgb(8,8,244);
+        flex-direction: column;
+        text-align: left;
+        }
+        .right h4{
+            font-size: 2rem;
+            color: blue;
+        }
+        .card2{
+         display: flex;
+         flex-direction: column;
+         text-align: left;
+        }
+        .right{
+            text-align: right;
+        }
+         
     </style>
 </head>
 
@@ -143,27 +186,30 @@
                     
                 </div>
                 <div class="owners">
-                    <img claass="i1" src="person1.jpg" alt="" height="400">
-                    <img class="i2" src="person2.jpg" alt="" height="400">
+                    <img claass="i1" src="person1.jpg" alt="" height="400" style="align-self: flex-start;">
+                    <img class="i2" src="person2.jpg" alt="" height="400" style="align-self: flex-end;">
                 </div>
             </div>
         </section>
         <section>
             <div class="container">
-                
-                <h2>Our services</h2>
+             <h2>Our service</h2>
+              
                 <div class="services">
                     <div class="card">
-                        <img src="icon1.jpg" alt="" height="80">
+                        
+                        <img src="icon1.jpg" alt="" height="80" >
                         <h3>App Consultancy</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, necessitatibus.</p>
+                        <p1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, necessitatibus.</p1>
                     </div>
+                   
                     <div class="card">
                         <img src="icon2.jpg" alt="" height="80">
                         <h3>App Consultancy</h3>
                         <p>Lorem ipsum dolor sit amet consectetur
                             adipisicing elit. Impedit, necessitatibus.</p>
                     </div>
+                  
                     <div class="card">
                         <img src="icon3.jpg" alt="" height="80">
                         <h3>App Consultancy</h3>
@@ -174,13 +220,14 @@
             </div>
         </section>
         <section>
-            <p><strong>Lorem </strong>ipsum dolor sit amet consectetur adipisicing elit. Voluptate maiores at earum numquam accusantium
+            <p class="box"><strong>Lorem </strong>ipsum dolor sit amet consectetur adipisicing elit. Voluptate maiores at earum numquam accusantium
                 eius asperiores nemo aut iure fugit laboriosam quae officia est distinctio ab fugiat <strong>odio, aliquid
                 molestias!</strong></p>
         </section>
         <section>
-            <div class="container">
-                <div class="leftcol">
+            <div class="card2"></div>
+            <div class="container h3">
+              
                    <h3>Contact with us</h3> 
                    <p>Instagram</p>
                    <p>Twitter</p>
