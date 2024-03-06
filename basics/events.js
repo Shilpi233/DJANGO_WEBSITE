@@ -48,10 +48,26 @@ function handleKeyEvents(){
     document.body.addEventListener(
         'keydown',
         (event) => {
+              box2.innerHTML = event.key;
+
+              // shift box3 by 10 px
+              if(event.key === 'ArrowRight') {
+                box3.style.transform = 'translateX(50px)';
+              }else if(event.key === 'ArrowLeft') {
+                    box3.style.transform = 'translateX(-50px)';
+                }
+              }
         
+    );
+    document.body.addEventListener(
+        'keyup',
+        (event) => {
+            if(event.key === 'Control')
+              box2.innerHTML = '🤷‍♀️'
         }
-    )
+    );
 }
 
 handleClick();
 handleMouseEvents();
+handleKeyEvents();
